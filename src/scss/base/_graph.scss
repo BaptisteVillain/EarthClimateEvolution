@@ -1,0 +1,97 @@
+.container-graph{
+	width: 50vw;
+	height: 50vw;
+	transition: transform .3s ease;
+	transform: translateY(-50px);
+	&.reduce{
+		transform: scale(0.7) translateY(-200px);
+	}
+	svg{
+		
+		transform-origin: 50% 50%;
+		transform: rotate(-90deg);
+
+		path.line-year{
+			stroke: #FFFFFF;
+			stroke-width: 1;
+			stroke-linecap: round;
+    	animation: draw 0.1s linear forwards;
+    	pointer-events: painted;
+    	transition: all .1s ease;
+    	cursor: pointer;
+    	fill:none;
+    	&:hover{
+    		stroke-width: 3;
+    		stroke: rgba(231, 76, 60,1.0) !important;
+    	}
+		}
+		path.line-prevent{
+			stroke: rgba(231, 76, 60,.1);
+			stroke-width: 2;
+			stroke-linecap: round;
+    	fill:none;
+		}
+		text.text-prevent{
+			text-anchor: middle;
+    	font-size: 12px;
+    	text-transform: uppercase;
+    	fill: rgba(231, 76, 60,.1);
+    	user-select: none;
+    	cursor: default;
+		}
+
+		path.framework{
+    	stroke: #30363F;
+    	stroke-width: 2px;
+    	fill: rgba(255,255,255,0.01);
+    	cursor: default;
+    }
+
+    path.test{
+    	fill: none;
+    	stroke: red;
+    	stroke-width: 4;
+    }
+
+		g.framework-line{
+		 	opacity: 0.015;
+		 	path{
+    		stroke: #FFFFFF;
+    		stroke-width: 2px;
+    		cursor: default;
+    		fill: none;
+    	}
+    }
+
+    g.framework-text{
+    	text{
+    		text-anchor: middle;
+    		font-size: 12px;
+    		text-transform: uppercase;
+    		fill: rgba(255,255,255,0.1);
+    		user-select: none;
+    		cursor: default;
+    	}
+    }
+	}
+}
+
+@keyframes draw {
+	0%{
+		opacity: 0;
+	}
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

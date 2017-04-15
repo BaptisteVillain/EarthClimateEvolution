@@ -1,0 +1,65 @@
+.container-detailed-graph{
+	width: 50vw;
+	height: 12vw;
+	position: absolute;
+	bottom: 160px;
+	margin: 0 auto;
+	transform: scale(0);
+	transform-origin: 50% 100%;
+	transition: transform .3s ease, opacity .2s ease;
+	min-height: 100px;
+	min-width: 300px;
+	opacity: 0;
+	&.active{
+		transform: scale(1);
+		opacity: 1;
+	}
+	svg{
+		path{
+			stroke: rgba(255,255,255,0.1);
+			stroke-width: 2;
+			fill: none;
+			transition: all .3s ease;
+		}
+	}
+
+	.month-pin{
+		width: 8px;
+		height: 8px;
+		background: #898C90;
+		border-radius: 100%;
+		position: absolute;
+		top: -4px;
+		left: -4px;
+		transition: all .3s ease;
+		p{
+			width: 40px;
+			text-align: center;
+			margin-left: -20px;
+			margin-top: -15px;
+			font-size: 10px;
+			color: rgba(255,255,255,.3);
+		}
+	}
+
+	.info-month{
+		position: absolute;
+		width: 100%;
+		height: 20px;
+		bottom: -20px;
+		left: 0;
+		display: flex;
+		flex-direction: row;
+		opacity: 0.1;
+		div{
+			width: 100%;
+			text-align: center;
+			margin: 0 5px;
+			border-top: 2px solid #FFFFFF;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			font-size: 10px;
+			padding-top: 5px;
+		}
+	}
+}

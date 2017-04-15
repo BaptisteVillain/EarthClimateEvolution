@@ -1,0 +1,28 @@
+*, *::after, *::before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #EFF3F7;
+  overflow: hidden;
+  user-select: none;
+  cursor: default;
+}
+
+.temp-container, .land-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141414;
+  background: radial-gradient(ellipse at center, #1C2837 0%, #050608 100%);
+  flex-direction: column;
+}
