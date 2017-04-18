@@ -5,7 +5,7 @@
 }
 
 html, body {
-  font-family: $main-font;
+  font-family: 'Hind', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -16,7 +16,7 @@ html, body {
   cursor: default;
 }
 
-.temp-container, .land-container{
+.temp-container{
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -25,4 +25,24 @@ html, body {
   background: #141414;
   background: radial-gradient(ellipse at center, #1C2837 0%, #050608 100%);
   flex-direction: column;
+  .title{
+    color: #F1F1F1;
+    width: 100%;
+    position: fixed;
+    text-align: left;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    h1{
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    p{
+      opacity: 0.5;
+      a{
+        color: #F1F1F1;
+        text-decoration: none;
+      }
+    }
+  }
 }

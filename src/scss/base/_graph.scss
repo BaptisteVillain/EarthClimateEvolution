@@ -1,6 +1,8 @@
 .container-graph{
 	width: 50vw;
 	height: 50vw;
+    min-width: 400px;
+    min-height: 400px;
 	transition: transform .3s ease;
 	transform: translateY(-50px);
 	&.reduce{
